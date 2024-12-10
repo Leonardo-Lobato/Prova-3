@@ -1,0 +1,23 @@
+quantidade = 0
+soma = 0
+
+print("Digite números inteiros. Pra terminar o programa digite "0".")
+
+while True: 
+numero = int(input("Digite um número: "))
+
+ if numero == 0:
+    break
+
+quantidade += 1
+soma += numero
+
+if quantidade > 0:
+    media = soma / quantidade
+else:
+    media = 0
+
+print("\nResultados:")
+print(f"Quantidade de números digitados: {quantidade}")
+print(f"Soma dos números: {soma}")
+print(f"Média aritmética: {media:.2f}")
